@@ -14,9 +14,8 @@ body_element.addEventListener("mousemove", (e) =>{
 
 
     const text_color=get_random_color();
-    console.log(color)
     const new_element=document.createElement('span');
-    new_element.textContent='hi'
+    new_element.textContent='*'
     new_element.style.position = 'absolute'; 
     new_element.style.left = `${e.offsetX}px`; 
     new_element.style.top =`${e.offsetY}px`
@@ -25,7 +24,7 @@ body_element.addEventListener("mousemove", (e) =>{
 
     setTimeout(() => {
         body_element.removeChild(new_element)
-    },2000);
+    },500);
 
     
 
